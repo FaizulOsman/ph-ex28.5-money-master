@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money master</title>
+    <!-- Link Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header class="mt-5">
+        <img class="mx-auto mt-5" src="images/money bag.png" alt="">
+    </header>
+    <main class="my-10">
+        <section class="mx-16 bg-white">
+            <div class="grid grid-cols-2 gap-5 mx-auto">
+                <!-- Banner -->
+                <div class="">
+                    <img class="rounded-md " src="images/Pexels Photo by Karolina Grabowska.png" alt="">
+                </div>
+                <!--Form -->
+                <div class="text-center">
+                    <!-- Income -->
+                    <div class="">
+                        <h4 class="text-base font-bold">Income</h4>
+                        <div class="mt-7">
+                            <span>Income:</span>
+                            <input id="income" class="alert-one alert-two bg-gray-200 pl-1 rounded-sm ml-4 mr-6"
+                                type="text" placeholder="10000">
+                        </div>
+                    </div>
+                    <!-- Expenses -->
+                    <div class="mt-7">
+                        <h4 class="text-base font-bold">Expenses</h4>
+                        <div class="mt-6">
+                            <span>Food:</span>
+                            <input id="food" class="alert-one bg-gray-200 pl-1 rounded-sm ml-4 mr-2" type="text"
+                                placeholder="3000">
+                        </div>
+                        <div class="mt-6">
+                            <span>Rent:</span>
+                            <input id="rent" class="alert-one bg-gray-200 pl-1 rounded-sm ml-4 mr-1" type="text"
+                                placeholder="2000">
+                        </div>
+                        <div class="mt-6">
+                            <span>Clothes:</span>
+                            <input id="clothes" class="alert-one bg-gray-200 pl-1 rounded-sm ml-4 mr-6" type="text"
+                                placeholder="500">
+                        </div>
+                    </div>
+                    <!-- Calculate -->
+                    <div class="mt-6">
+                        <button id="calculate"
+                            class="bg-blue-500 text-white text-semibold px-6 py-2 rounded-sm">Calculate</button>
+                        <h4 class="text-base font-bold mt-6">Total Expenses: <span id="total-expenses">00</span></h4>
+                        <h4 class="text-base font-bold mt-8">Balance: <span id="balance">00</span></h4>
+                    </div>
+                    <!-- Saving -->
+                    <div class="mt-8">
+                        <div class="">
+                            <span>Save:</span>
+                            <input id="saving" class="alert-two bg-gray-200 rounded-sm ml-4 w-20 p-1" type="text"
+                                placeholder="20">
+                            <span class="px-10">%</span>
+                            <button id="save"
+                                class="bg-blue-500 text-white text-semibold px-7 py-1 rounded-sm">Save</button>
+                        </div>
+                        <h4 class="text-base font-bold mt-8">Saving Amount: <span id="saving-amount">00</span></h4>
+                        <h4 class="text-base font-bold mt-5">Remaining Balance: <span id="remaining-balance">00</span>
+                        </h4>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
